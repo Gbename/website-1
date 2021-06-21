@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" 
 	rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -43,13 +44,15 @@
 	</header>
 	<div id="container">
 		<div id="container-image">
-			<img src="img/undraw_personalization_triu.svg" alt="" id="image">
-		</div>
+				<div data-aos="zoom-in-right">
+					<img src="img/undraw_personalization_triu.svg" alt="" id="image">
+				</div>				
+		</div>		
 		<div id="text">
-			<p>Hello!</p>
-			<h2> I'm Inès HOUNMENOU</h2>
-			<p> Web Developper</p>
-			<button id="button"> Hire me</button>
+				<p>Hello!</p>
+				<h2> I'm Inès HOUNMENOU</h2>
+				<p> Web Developper</p>
+				<button id="button"> Hire me</button>
 		</div>
 	</div>
 	<div id="container1">
@@ -101,14 +104,17 @@
     		<h1>Mes Services</h1>    	
 	    	<div class="icon">
 	    		<div class="icon1">
-	    			<img class="images" src="img/Web.jpg">
+	    			<div data-aos="zoom-in-right">
+	    				<img class="images" src="img/Web.jpg">
+	    			</div>
 	    			<h5>Web Design</h5>
 	    		</div>
 	    		<div class="icon2">
-	    			<img class="images" src="img/Graphism.jpg">
+	    			<div data-aos="fade-down">
+	    				<img class="images" src="img/Graphism.jpg">
+	    			</div>	    			
 	    			<h5>Graphisme</h5>
 	    		</div>
-
 	    	</div>
 	    </div>    	
     </div>
@@ -118,16 +124,16 @@
 	    	<div class="texte">
 	    		<p style="max-width: 400px, text-align: center"> J'apprends vite et je me spécialise dans une multitude de compétences requises pour le développement d'applications Web et la conception de produits.</p>
 	    	</div>
-	    	<div class="container">	 
+	    	<div class="container">	
 				<div class="left">	
 					<div>
 						<div class="tex">
 							<span class="mes">HTML5</span>
 							<span>70%</span>
-						</div>
+						</div>						 			    		
 						<div class="progress">
 							<div class="fill a"></div>
-						</div>  
+						</div>
 					</div>							    		
 					<div>
 						<div class="tex">
@@ -203,35 +209,42 @@
     	<div>
     		<h1>Me Contacter</h1>
 			<div class="contact-box">
-				<div class="left">
-					<input type="text" class="field" placeholder="Votre Nom">
-					<input type="email" class="field" placeholder="Votre Email">
-					<input type="text" class="field" placeholder="Votre Numéro">
-					<textarea class="field area" placeholder="Message"></textarea>
-					<button class="btn">Send</button>
+				<div data-aos="fade-right"
+				     data-aos-offset="300"
+				     data-aos-easing="ease-in-sine">
+				     <div class="left">
+						<input type="text" class="field" placeholder="Votre Nom">
+						<input type="email" class="field" placeholder="Votre Email">
+						<input type="text" class="field" placeholder="Votre Numéro">
+						<textarea class="field area" placeholder="Message"></textarea>
+						<button class="btn">Send</button>
+					</div>
 				</div>
+					
 				<div id="right">
-					<article>
-						<h2> Comment puis-je vous aider?</h2>
-						<p>Si vous aimez mon travail et souhaitez bénéficier de mes services, envoyez-moi un message en utilisant le formulaire de contact.</p>
-						<p>Ou contactez-moi en utilisant mon e-mail ou mon numéro de contact.</p>
-						<p>A bientôt</p>
+					<div data-aos="flip-right">
+						<article>
+							<h2> Comment puis-je vous aider?</h2>
+							<p>Si vous aimez mon travail et souhaitez bénéficier de mes services, envoyez-moi un message en utilisant le formulaire de contact.</p>
+							<p>Ou contactez-moi en utilisant mon e-mail ou mon numéro de contact.</p>
+							<p>A bientôt</p>
 
-						<div class="mt">
-							<div class="col-sm-2">
-								<div class="te">Email:</div>
+							<div class="mt">
+								<div class="col">
+									<div class="te">Email:</div>
+								</div>
+								<div class="dm">
+									<div class="te">tinesthecle96@gmail.com</div>
+								</div>
+								<div class="col">
+									<div class="te">Phone:</div>
+								</div>
+								<div class="dm">
+									<div class="te">+229 62-74-43-84</div>
+								</div>							
 							</div>
-							<div class="col-sm-10">
-								<div class="te">tinesthecle96@gmail.com</div>
-							</div>
-							<div class="col-sm-2">
-								<div class="te">Phone:</div>
-							</div>
-							<div class="col-sm-10">
-								<div class="te">+229 62-74-43-84</div>
-							</div>							
-						</div>
-					</article>				
+						</article>	
+					</div>			
 				</div>			
 			</div>		
     	</div>		
@@ -273,10 +286,13 @@
 		        	</nav>
         		</div>	
 				<small class="copyright">&copy Mon site; Tous droits reservés</small>	
-			</article>		
-			
-        		 				
+			</article>		        		 				
 		</div>
 	</footer>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
 </body>
 </html>
